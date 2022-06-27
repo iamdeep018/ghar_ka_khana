@@ -1,11 +1,23 @@
-export const carousalData = [
-    {
-        image : 'https://media.istockphoto.com/photos/table-top-view-of-spicy-food-picture-id1316145932?b=1&k=20&m=1316145932&s=170667a&w=0&h=feyrNSTglzksHoEDSsnrG47UoY_XX4PtayUPpSMunQI='
-    },
-    {
-        image : 'https://thumbs.dreamstime.com/b/assorted-american-food-top-view-109748438.jpg'
-    },
-    {
-        image : 'https://www.cypressgreen.in/blog/wp-content/uploads/2021/03/food.jpg'
-    }
-]
+import image3 from "./Images/3.jpg"
+const images = [{
+    id: 1,
+    src: "images/1.jpg",
+    alt: "Image 1"
+},
+{
+    id: 2,
+    src: "images/2.jpg",
+    alt: "Image 2 "
+},
+{
+    id: 3,
+    src: "images/3.jpg",
+    alt: "Image 3"
+},
+{
+    id: 4,
+    src: "images/4.jpg",
+    alt: "image 4"
+}
+];
+export default images;

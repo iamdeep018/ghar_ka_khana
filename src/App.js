@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Naviga from './Component/header/navigation';   
-import HeadCarou from './Component/headlines/carousal';
-import { carousalData } from './Component/headlines/carousalData';
+import ImageSlider from './Component/headlines/carousal';
+import images from './Component/headlines/carousalData';
 
 class App extends Component{
   
@@ -13,7 +13,7 @@ class App extends Component{
         <div className='container'>
           
           <Naviga />
-          <HeadCarou slides={carousalData} />
+          <ImageSlider images={images} />
         </div>
       </div>
     )
