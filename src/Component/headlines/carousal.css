@@ -1,5 +1,6 @@
 .carousal{
     position: absolute;
+    top: 5rem;
     width: 99%;
     left: 9px;
     /* padding-right:60px ; */
@@ -67,7 +68,7 @@
 
 .slick-dots li button:before{
     position: relative;
-    top: -140px;
+    top: -100px;
 }
   /* @media screen and (max-width: 580px) {
     .slick-slide div div span {

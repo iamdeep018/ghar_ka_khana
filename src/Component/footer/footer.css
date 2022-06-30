@@ -1,0 +1,7 @@
+.footer-container{
+    background-color: darkgray;
+    height: 20vh;
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+}

@@ -1,10 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:wght@300&display=swap');
 body{
-  background-color: antiquewhite;
+  background-color: white;
   font-family: 'Roboto', sans-serif;
   overflow: auto;
 }
 .container{
   max-width: 1300px;
   margin: 0 auto;
+}
+.explore{
+  letter-spacing: 5px;
+  position: absolute;
+  top: 80vh;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: absolute;
+  top: 85vh;
+  width: 1300px;
+  /* background-color: pink; */
+  border: none;
+  left: 18rem;
+  
 }

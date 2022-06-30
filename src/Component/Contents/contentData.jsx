@@ -1,0 +1,161 @@
+
+const Content_db =[
+    {
+        id:1,
+        srcc:"images/c1.jpg",
+        titlee:"Kirti Mahal Legacy",
+        Descp:"North Indian, Chinease",
+        type:"food",
+        offer:"POPULAR CHOICE",
+        address:"Delhi",
+        price:100,
+        price_stat: " per Day",
+        rating:4.3
+    },
+    {
+        id:2,
+        srcc:"images/c2.jpg",
+        titlee:"Malini's Kitchen",
+        Descp:"Continental, Healthy Food",
+        type:"food",
+        offer:"",
+        address:"Bangalore",
+        price:100,
+        price_stat: " per Day",
+        rating:4.0
+    },
+    {
+        id:3,
+        srcc:"images/c3.jpg",
+        titlee:"Home Plate by EatFit",
+        Descp:"Fast food, Continental",
+        type:"food",
+        offer:"",
+        address:"Mumbai",
+        price:100,
+        price_stat: " per Day",
+        rating:3.8
+    },
+    {
+        id:4,
+        srcc:"images/c4.jpg",
+        titlee:"Ramdeo",
+        Descp:"South Indian",
+        type:"food",
+        offer:"",
+        address:"Hyderabad",
+        price:100,
+        price_stat: " per Day",
+        rating:4.0
+    },
+    {
+        id:5,
+        srcc:"images/c5.jpg",
+        titlee:"Hare Krishna",
+        Descp:"South Indian, Continental",
+        type:"food",
+        offer:"BUDGET FRIENDLY",
+        address:"Hyderabad",
+        price:100,
+        price_stat: " per Day",
+        rating:4.7
+    },
+    {
+        id:6,
+        srcc:"images/c6.jpg",
+        titlee:"Feast at East",
+        Descp:"Fast Food, North Indian",
+        type:"food",
+        offer:"",
+        address:"Mumbai",
+        price:100,
+        price_stat: " per Day",
+        rating:4.5
+    },
+    {
+        id:7,
+        srcc:"images/c7.jpg",
+        titlee:"Arya Bhavan",
+        Descp:"South Indian",
+        type:"food",
+        offer:"",
+        address:"Delhi",
+        price:100,
+        price_stat: " per Day",
+        rating:3.9
+    },
+    {
+        id:8,
+        srcc:"images/c8.jpg",
+        titlee:"Sai Samrat Kitchen",
+        Descp:"North Indian, South Indian",
+        type:"food",
+        offer:"",
+        address:"Bangalore",
+        price:100,
+        price_stat: " per Day",
+        rating:4.1
+    },
+    {
+        id:9,
+        srcc:"images/r1.jpg",
+        titlee:"2BHK Apartment for Rent in Uppal, NH22",
+        Descp:"Multistorey Apartment is available for rent",
+        type:"rent",
+        offer:"",
+        address:"Hyderabad",
+        price:2200,
+        price_stat: " per Month",
+        rating:4.3
+    },
+    {
+        id:10,
+        srcc:"images/r2.jpg",
+        titlee:"2BHK Apartment for Rent in Delta Central, Kharghar",
+        Descp:"2bhk with huge terrace and completely furnished",
+        type:"rent",
+        offer:"",
+        address:"Mumbai",
+        price:2800,
+        price_stat: " per Month",
+        rating:4.4
+    },
+    {
+        id:11,
+        srcc:"images/r3.jpg",
+        titlee:"Office Space for Rent in Brigade Road",
+        Descp:"709 sq ft office space un-furnished",
+        type:"rent",
+        offer:"",
+        address:"Bangalore",
+        price:2200,
+        price_stat: " per Month",
+        rating:4.7
+    },
+    {
+        id:12,
+        srcc:"images/b1.jpg",
+        titlee:"2020 TATA Altroz",
+        Descp:"26,060km, Petrol, Manual",
+        type:"buy",
+        offer:"",
+        address:"Bangalore",
+        price:725000,
+        price_stat: "",
+        rating:4.2
+    },
+    {
+        id:13,
+        srcc:"images/b2.jpg",
+        titlee:"2019 Hyundai Santro",
+        Descp:"43,148km, Petrol, Manual",
+        type:"buy",
+        offer:"VERIFIED",
+        address:"Bangalore",
+        price:462000,
+        price_stat: "",
+        rating:4.5
+    },
+]
+
+export default Content_db;

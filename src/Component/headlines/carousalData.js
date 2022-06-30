@@ -1,4 +1,4 @@
-import image3 from "./Images/3.jpg"
+
 const images = [{
     id: 1,
     src: "images/1.jpg",

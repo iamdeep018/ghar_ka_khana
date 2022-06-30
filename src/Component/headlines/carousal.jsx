@@ -7,7 +7,7 @@ import "./carousal.css";
 const ImageSlider = ({images}) => {
 
     const GalleryPrevArrow = ({ currentSlide, slideCount, ...props }) => {
-        const { className, onClick } = props;
+         const { className, onClick } = props;
     
         return (
           <div {...props} className="custom-prevArrow" onClick={onClick}>
@@ -45,17 +45,15 @@ const ImageSlider = ({images}) => {
       dots: true,
       infinite: true,
       speed: 500,
+      autoplay:true,
       slidesToShow: 1,
       slidesToScroll: 1,
-        autoplaySpeed: 5500,
-        centerPadding:'200px',
-        nextArrow: <GalleryNextArrow />,
-        prevArrow: <GalleryPrevArrow />
+      autoplaySpeed: 3500,
+      // centerPadding:'100px',
+      nextArrow: <GalleryNextArrow />,
+      prevArrow: <GalleryPrevArrow />
 
     };
-
-    
-
     return (
         <>
         <div className="carousal">

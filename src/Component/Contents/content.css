@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari&family=Gochi+Hand&family=Noto+Sans:wght@600&family=Roboto:wght@300&display=swap');
+.card-wrapper{
+    min-width:300px;
+    width:400px;
+    height: 430px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border-color: lightgray;
+    border-width: 0.5px;
+    border-style: solid;
+    /* background: transparent; */
+    background-color: rgb(255, 255, 245);
+    margin: 20px 0;
+    
+}
+.card-wrapper:hover{
+    box-shadow: 0 2px 20px gray;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    transform: scale(1.05) ;
+    transition: all 0.3s ease-in-out 0s;
+}
+.card-img{
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    overflow: hidden;
+    min-width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+.card-title{
+    margin: 0;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    font-family:'Gantari', sans-serif;
+}
+.card-descp{
+    margin-top: 0;
+    color: gray;
+    padding-left: 10px;
+}
+.offer{
+    position: relative;
+    top:-175px;
+    display: inline;
+    padding: 8px 32px 8px 5px;
+    font-weight: 900;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: green;
+    color: white;
+}
+.card-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+.card-price span{
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin: auto 0;
+}
+.card-price p{
+    font-weight: 700;
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+}
+/*
+.card-btn{
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    border-radius: 20px;
+}
+.card-btn:hover{
+    background-color:red;
+    color: white;
+} */
