@@ -7,23 +7,22 @@ import ImageSlider from './Component/headlines/carousal';
 import images from './Component/headlines/carousalData';
 
 class App extends Component{
-  
-
   render(){
     return (
-      
-      <div className='backbody'>
+      <>
         <div className='container'>
           
           <Naviga />
+          
           <ImageSlider images={images} />
-          <span className='explore'>EXPLORE</span>
-          <div className='cards-container'>
+          <div className='explore'>EXPLORE</div>
+          
+        <div className='cards-container'>
           <Card />
-          </div>
+        </div>
           <Footer />
         </div>
-      </div>
+        </>
     )
   }
 }

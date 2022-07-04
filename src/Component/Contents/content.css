@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Gantari&family=Gochi+Hand&family=Noto+Sans:wght@600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300&family=Gochi+Hand&family=Noto+Sans:wght@600&family=Roboto:wght@300&display=swap');
 .card-wrapper{
-    min-width:300px;
     width:400px;
-    height: 430px;
+    height: max-content;
+    position: relative;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    border-color: lightgray;
+    border-color: rgb(194, 150, 150);
     border-width: 0.5px;
     border-style: solid;
-    /* background: transparent; */
-    background-color: rgb(255, 255, 245);
+    background: transparent;
+    /* background-color: rgb(255, 255, 245); */
     margin: 20px 0;
-    
 }
 .card-wrapper:hover{
     box-shadow: 0 2px 20px gray;
@@ -20,6 +19,17 @@
     animation-duration: 1s;
     transform: scale(1.05) ;
     transition: all 0.3s ease-in-out 0s;
+}
+.offer{
+    position: absolute;
+    top:11rem;
+    display: inline-block;
+    padding: 8px 32px 8px 5px;
+    font-weight: 900;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: green;
+    color: white;
 }
 .card-img{
     border-top-left-radius:20px ;
@@ -31,55 +41,63 @@
 }
 .card-title{
     margin: 0;
-    padding-left: 10px;
-    font-weight: bolder;
+    padding-left: 0.7rem;
+    font-weight: bold;
     font-size: 1.6rem;
-    font-family:'Gantari', sans-serif;
+    font-family: 'Gantari', sans-serif;
 }
 .card-descp{
     margin-top: 0;
-    color: gray;
-    padding-left: 10px;
+    margin-bottom: 0;
+    color: rgb(107, 107, 107);
+    padding-left: 0.7rem;
+    font-weight: bold;
 }
-.offer{
-    position: relative;
-    top:-175px;
-    display: inline;
-    padding: 8px 32px 8px 5px;
-    font-weight: 900;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: green;
-    color: white;
+.card-descp span{
+    padding-left: 0.4rem;
 }
+
 .card-price{
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
     padding: 0 0.5rem;
 }
 .card-price span{
+    padding-left: 0.2rem;
     font-weight: 900;
     font-size: 1.6rem;
     margin: auto 0;
 }
 .card-price p{
     font-weight: 700;
-    padding-right: 0.5rem;
+    padding:0.4rem 0.4rem;
     font-size: 1.1rem;
+    background-color: green;
+    border-radius: 20px;
+    color: white;
 }
-/*
+.card-price p .fa-star{
+    padding-right: 0.4rem;
+}
+
 .card-btn{
-    padding: 1rem;
-    font-family: inherit;
+    padding: 0.5rem;
+    /* font-family: inherit; */
     font-weight: bold;
     font-size: 1rem;
-    margin: 1rem;
+    align-self: center;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     border: 2px solid black;
     background: transparent;
     color: black;
     border-radius: 20px;
 }
 .card-btn:hover{
-    background-color:red;
+    background-color:green;
     color: white;
-} */
+    cursor: pointer;
+} 

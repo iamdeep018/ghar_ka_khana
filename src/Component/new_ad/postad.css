@@ -1,70 +1,120 @@
 .modalBackground {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(200, 200, 200);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-   
-  .modalContainer {
-    width: 500px;
-    height: 500px;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-  }
-  
-  /* .modalContainer .title {
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-  } */
-  
-  .titleCloseBtn {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .titleCloseBtn button {
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-  }
-  
-  .modalContainer .body {
-    flex: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7rem;
-    text-align: center;
-  }
-  
-  .modalContainer .footer {
-    flex: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modalContainer .footer button {
-    width: 150px;
-    height: 45px;
-    margin: 10px;
-    border: none;
-    background-color: cornflowerblue;
-    color: white;
-    border-radius: 8px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  #cancelBtn {
-    background-color: crimson;
-  }
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200);
+  /* opacity: 0.8; */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_container{
+display: flex;
+/* opacity: 1; */
+}
+.form-ad{
+/* width: 48vw; */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.form-sign{
+width: 48vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.txt_field{
+position: relative;
+border-bottom: 2px solid;
+margin: 30px 0;
+width:20rem;
+}
+.txt_field input{
+width: 100%;
+padding: 0 5px;
+height: 40px;
+font-size: 16px;
+border: none;
+background:none;
+outline: none;
+}
+.txt_field label{
+position: absolute;
+top: 50%;
+left: 5px;
+transform: translateY(-50%);
+font-size: 16px;
+pointer-events: none;
+} 
+.txt_field span::before{
+content:'';
+position: absolute;
+top: 40px;
+left: 0;
+width: 100%;
+height: 2px;
+background: #2691d9;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+top: -5px;
+color: #269;
+}
+.form-divide{
+border-style: solid;
+border-width: 0 2px 0 0;
+}
+.form-title{
+font-weight: 700;
+font-size: 1.6rem;
+}
+.modalContainer {
+width: 50vw;
+height: 70vh;
+border-radius: 12px;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+display: flex;
+flex-direction: column;
+padding: 25px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.google-sign{
+  background-color: white;
+  color: black;
+  width: max-content;
+  border-style: groove;
+}

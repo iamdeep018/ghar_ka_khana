@@ -1,8 +1,9 @@
 .carousal{
-    position: absolute;
-    top: 5rem;
+    position: static;
+    margin-top: 5rem;
+    /* top: 5rem; */
     width: 99%;
-    left: 9px;
+    /* left: 9px; */
     /* padding-right:60px ; */
     height: 70vh;
     /* background-color: blue; */

@@ -8,37 +8,52 @@ function AdForm(){
         <div className="modalBackground">
             <div className="modalContainer">
                 <div className="titleCloseBtn">
-                    <button
+                    {/* <button
                         onClick={() => {
                         setOpenModal(false);
                         }}> 
                         X
-                    </button>
+                    </button> */}
                 </div>
-
-                <label htmlFor="type">Type of Ad</label>
-                <input type="radio" name="" id="" />//type
-                <label htmlFor="title"></label>
-                <input type="text" />
-                <label htmlFor="Descp">Descriprion</label>
-                <input type="text" name="" id="" />
-                <label htmlFor="location">Location</label>
-                <input type="radio" name="" id="" />//location
-                <label htmlFor="upload_image">Upload Image</label>
-                <input type="image" src="" alt="" />
-                <label htmlFor="price">Price</label>
-                <input type="text" />
-
-                    <div className="footer">
-                    <button
-                    onClick={() => {
-                    setOpenModal(false);
-                    }}
-                    id="cancelBtn">
-                    Cancel
-                    </button>
-                    <button>Continue</button>
+                <div className='form-container'>
+                    <form className='form-ad'>
+                        <label>Type of Ad</label>
+                        <input type="radio" name="ad-type" id="car" />
+                        <label >Sell Car</label>
+                        <input type="radio" name="ad-type" id="rent" />
+                        <label >Rent My Place</label>
+                        <input type="radio" name="ad-type" id="food" />
+                        <label >Catering Service</label>
+                        <div class="txt_field">
+                        <input type="text" required />
+                        <span></span>
+                        <label>Title for Ad</label>
+                        </div>
+                        <div class="txt_field">
+                        <input type="text" required />
+                        <span></span>
+                        <label>Ad Description</label>
+                        </div>
+                        <label>Location</label>
+                        <input type="radio" name="ad-type" id="Delhi" />
+                        <label >DELHI</label>
+                        <input type="radio" name="ad-type" id="Mumbai" />
+                        <label >MUMBAI</label>
+                        <input type="radio" name="ad-type" id="Hyderabad" />
+                        <label >HYDERABAD</label>
+                        <input type="radio" name="ad-type" id="Bangalore" />
+                        <label >BANGALORE</label>
+                        <label>Upload Image</label>
+                        <input type="file" name="fileToUpload" id="fileToUpload" />
+                        <div class="txt_field">
+                        <input type="text" required />
+                        <span></span>
+                        <label>Price</label>
+                        </div>
+                        <button>Submit</button>
+                    </form>
                 </div>
+                    
             </div>
         </div>
         </>

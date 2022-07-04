@@ -18,16 +18,7 @@ function View_details(){
 
                 {/* content to be shown */}
 
-                <div className="footer">
-                    <button
-                    onClick={() => {
-                    setOpenModal(false);
-                    }}
-                    id="cancelBtn">
-                    Cancel
-                    </button>
-                    <button>Continue</button>
-                </div>
+                
             </div>
         </div>
         </>
