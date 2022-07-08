@@ -1,11 +1,13 @@
 import React from 'react';
 import './content.css'
-import Content_db from './contentData';
+// import Content_db from './contentData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-function Card({}){
-    return Content_db.map((item)=>{
+function Card({props}){
+ 
+
+    return props.map((item)=>{
         return(
             <>
             <div key={item.id} className='card-wrapper'>
@@ -17,7 +19,6 @@ function Card({}){
                         <span>{item.address}</span></p>
                         <div className='card-price'>
                             <span>Rs.{item.price}{item.price_stat}</span>
-                            {/*star emoji */}
                             <p><FontAwesomeIcon icon={faStar} />{item.rating}/5 Stars</p>
                         </div>
                         <button className='card-btn' >View</button><br />

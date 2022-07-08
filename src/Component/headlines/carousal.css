@@ -115,15 +115,16 @@
   .custom-prevArrow,
   .custom-nextArrow {
     position: relative;
-    z-index: 99999;
+    z-index: 4;
     top: -10px;
   }
   .custom-prevArrow {
     left: 60px;
-    
   }
   .custom-nextArrow {
     right: 60px;
+  
+  
   }
   .custom-prevArrow:hover,
   .custom-nextArrow:hover {

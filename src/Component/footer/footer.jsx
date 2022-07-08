@@ -24,8 +24,8 @@ function Footer(){
                     <span> Web Developer</span></div>
                 </div>
                 <div className='line'></div>
-                <p className='para'>I am an IT enthusiast.
-                     I'm a proactive learner and like to challenge myself by getting my hands on new technologies. I like to create projects which has real life usage and has potential to connect with the general public. </p>
+                <p className='para'>
+                     I'm a proactive learner and like to challenge myself by getting my hands on new technologies. I like to work on projects which has real life usage and has potential to connect with the general public. </p>
             </div>
         </div>
         </>

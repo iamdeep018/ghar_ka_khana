@@ -1,24 +1,23 @@
 import React from "react";
+// import { useSelector } from 'react-redux';
+import { useDispatch } from "react-redux";
+import { toggleSign } from "../../reducers/signReducer";
+
 import "./signup.css";
 
-// function Modal({ setOpenModal }) {
-  function Signup(){
+function Signup(){
+  const dispatch=useDispatch();
   return (
     <div className="modalBackground">
       <div className="modalContainer">
         <div className="titleCloseBtn">
-          {/* <button
+          <button
             onClick={() => {
-              setOpenModal(false);
+              dispatch(toggleSign(false));
             }}> 
             X
-          </button> */}
+          </button>
         </div>
-        <div className="title">
-          <h1>Amar Poem Sono</h1>
-        </div>
-        
-        
         <div className='form_container'>
                 <form className="form-log">
                     <div className='form-title'>I already have an account</div>

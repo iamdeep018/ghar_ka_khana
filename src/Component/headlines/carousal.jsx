@@ -53,7 +53,7 @@ const ImageSlider = ({images}) => {
       nextArrow: <GalleryNextArrow />,
       prevArrow: <GalleryPrevArrow />
 
-    };
+    }; 
     return (
         <>
         <div className="carousal">
@@ -61,7 +61,7 @@ const ImageSlider = ({images}) => {
                 <Slider {...settings}>
                 {images.map((item) => (
                     <div key={item.id}>
-                    <img src={item.src} alt={item.alt} className="headling-img" />
+                    <img src={item.src} alt={item.alt} />
                     </div>
                 ))}
             </Slider>

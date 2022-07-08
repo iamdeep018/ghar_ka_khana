@@ -8,7 +8,7 @@ const Content_db =[
         type:"food",
         offer:"POPULAR CHOICE",
         address:"Delhi",
-        price:"100",
+        price:110,
         price_stat: " per Day",
         rating:4.3
     },
@@ -20,7 +20,7 @@ const Content_db =[
         type:"food",
         offer:"",
         address:"Bangalore",
-        price:"100",
+        price:105,
         price_stat: " per Day",
         rating:4.0
     },
@@ -32,7 +32,7 @@ const Content_db =[
         type:"food",
         offer:"",
         address:"Mumbai",
-        price:"100",
+        price:130,
         price_stat: " per Day",
         rating:3.8
     },
@@ -44,7 +44,7 @@ const Content_db =[
         type:"food",
         offer:"",
         address:"Hyderabad",
-        price:"100",
+        price:90,
         price_stat: " per Day",
         rating:4.0
     },
@@ -56,7 +56,7 @@ const Content_db =[
         type:"food",
         offer:"BUDGET FRIENDLY",
         address:"Hyderabad",
-        price:"100",
+        price:115,
         price_stat: " per Day",
         rating:4.7
     },
@@ -68,7 +68,7 @@ const Content_db =[
         type:"food",
         offer:"",
         address:"Mumbai",
-        price:"100",
+        price:95,
         price_stat: " per Day",
         rating:4.5
     },
@@ -80,7 +80,7 @@ const Content_db =[
         type:"food",
         offer:"",
         address:"Delhi",
-        price:"100",
+        price:110,
         price_stat: " per Day",
         rating:3.9
     },
@@ -92,7 +92,7 @@ const Content_db =[
         type:"food",
         offer:"",
         address:"Bangalore",
-        price:"100",
+        price:100,
         price_stat: " per Day",
         rating:4.1
     },
@@ -104,7 +104,7 @@ const Content_db =[
         type:"rent",
         offer:"",
         address:"Hyderabad",
-        price:"2,200",
+        price:18000,
         price_stat: " per Month",
         rating:4.3
     },
@@ -116,7 +116,7 @@ const Content_db =[
         type:"rent",
         offer:"",
         address:"Mumbai",
-        price:"2,800",
+        price:15000,
         price_stat: " per Month",
         rating:4.4
     },
@@ -128,7 +128,7 @@ const Content_db =[
         type:"rent",
         offer:"",
         address:"Bangalore",
-        price:"2,200",
+        price:8500,
         price_stat: " per Month",
         rating:4.7
     },
@@ -140,7 +140,7 @@ const Content_db =[
         type:"car",
         offer:"",
         address:"Bangalore",
-        price:"7,25,000",
+        price:725000,
         price_stat: "",
         rating:4.2
     },
@@ -152,7 +152,7 @@ const Content_db =[
         type:"car",
         offer:"VERIFIED",
         address:"Bangalore",
-        price:"4,62,000",
+        price:462000,
         price_stat: "",
         rating:4.5
     },

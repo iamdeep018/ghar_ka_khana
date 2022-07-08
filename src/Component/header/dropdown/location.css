@@ -1,0 +1,26 @@
+.loca-container{
+    top: 78%;
+    left: 32%;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    height: max-content;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.loca-container ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+.loca-container ul li{
+    padding: 10px 5px;
+    font-weight: 600;
+}
+.loca-container ul li:hover{
+    color: white;
+    background-color: rgb(228, 155, 47);
+    cursor: pointer;
+}

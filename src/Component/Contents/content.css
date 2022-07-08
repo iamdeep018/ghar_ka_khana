@@ -6,13 +6,13 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    border-color: rgb(194, 150, 150);
+    border-color: rgb(243, 164, 45);
     border-width: 0.5px;
     border-style: solid;
     background: transparent;
     /* background-color: rgb(255, 255, 245); */
     margin: 20px 0;
-}
+} 
 .card-wrapper:hover{
     box-shadow: 0 2px 20px gray;
     animation-timing-function: ease-in-out;
@@ -22,7 +22,7 @@
 }
 .offer{
     position: absolute;
-    top:11rem;
+    top:8.2rem;
     display: inline-block;
     padding: 8px 32px 8px 5px;
     font-weight: 900;
@@ -35,8 +35,8 @@
     border-top-left-radius:20px ;
     border-top-right-radius:20px ;
     overflow: hidden;
-    min-width: 300px;
-    height: 250px;
+    min-width: 250px;
+    height: 200px;
     object-fit: cover;
 }
 .card-title{
@@ -66,7 +66,7 @@
 .card-price span{
     padding-left: 0.2rem;
     font-weight: 900;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: auto 0;
 }
 .card-price p{
@@ -91,13 +91,13 @@
     margin-bottom: 1rem;
     padding-right: 2rem;
     padding-left: 2rem;
-    border: 2px solid black;
+    border: 2px solid rgb(243, 164, 45);
     background: transparent;
     color: black;
     border-radius: 20px;
 }
 .card-btn:hover{
-    background-color:green;
+    background-color:rgb(243, 164, 45);
     color: white;
     cursor: pointer;
 } 

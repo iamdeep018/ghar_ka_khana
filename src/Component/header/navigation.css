@@ -2,6 +2,12 @@
 .menu{
     display: flex;
 }
+.menu li{
+    margin-top: 1.8%;
+}
+.menu:hover{
+    cursor: pointer;
+}
 .navbar{
     position: fixed;
     left: 1px;
@@ -10,11 +16,7 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
-    z-index: 4;
-}
-a{
-    text-decoration: none;
-    color: blue;
+    z-index: 5;
 }
 .brand {
     display:flex;
@@ -26,17 +28,25 @@ a{
     font-family: 'Gochi Hand', cursive;
     margin: 0;
     padding-left: 4px;
+    color: green;
+    margin-top: 6%;
+    
 }
 .navlist{
     font-family: 'Noto Sans', sans-serif;
     padding-top: 7px;
-    padding-right: 15rem;
+    padding-right: 9rem;
     list-style: none;
     font-weight: bolder;
+    width: max-content;
+}
+.leftnav{
+    padding-right: 13%;
 }
 .navlist > li{
     display: inline-block;
     margin-right: 30px;
+    cursor: pointer;
     
 }
 .navlist li:hover{
@@ -64,4 +74,21 @@ a{
     cursor: pointer;
     color:rgb(64, 224, 0);
     background-color: black;
+}
+.fa-magnifying-glass{
+    background-color: rgb(228, 155, 47);
+    padding: 9px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.searchbox{
+    border: none;
+    height: 100%;
+    width: 86.2%;
+    background: transparent;
+}
+.search-container{
+    border-radius: 10px;
+    width: 280px;
+    background-color: beige;
 }

@@ -1,19 +1,24 @@
 import React from 'react';
 import './postad.css'
+import {useSelector,useDispatch} from 'react-redux'
+import { toggleAdForm } from '../../reducers/adformReducer';
+
 
 function AdForm(){
-    
+    const adformstatus=useSelector((state)=>state.adform.value)
+    const dispatch=useDispatch();
+
     return(
         <>
         <div className="modalBackground">
             <div className="modalContainer">
                 <div className="titleCloseBtn">
-                    {/* <button
+                    <button
                         onClick={() => {
-                        setOpenModal(false);
+                        dispatch(toggleAdForm(!adformstatus));
                         }}> 
                         X
-                    </button> */}
+                    </button>
                 </div>
                 <div className='form-container'>
                     <form className='form-ad'>

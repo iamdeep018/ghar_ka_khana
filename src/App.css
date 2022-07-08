@@ -3,7 +3,7 @@ body{
   /* background-color: white; */
   font-family: 'Roboto', sans-serif;
   overflow: auto;
-}
+} 
 .container{
   /* max-width: 1300px;
   margin: 0 auto; */
@@ -34,6 +34,7 @@ body{
   top: 51rem;
   /* min-width: 40%; */
   width: 69%;
+  min-height: 40vh;
   /* align-self: flex-start; */
   /* background-color: pink; */
   /* border: none; */

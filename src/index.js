@@ -3,11 +3,37 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { configureStore } from '@reduxjs/toolkit';
+import signReducer from './reducers/signReducer'
+import adformReducer from './reducers/adformReducer';
+import categoryReducer from './reducers/categoryReducer';
+import locationReducer from './reducers/locationReducer';
+import confilterReducer from './reducers/confilterReducer';
+import catefilterReducer from './reducers/catefilterReducer';
+import locafilterReducer from './reducers/locafilterReducer';
+
+const store=configureStore({
+  reducer:{
+    sign: signReducer,
+    adform:adformReducer,
+    catedd:categoryReducer,
+    locadd:locationReducer,
+    contentfil:confilterReducer,
+    catefil:catefilterReducer,
+    locafil:locafilterReducer,
+  }
+})
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+  </Provider>
   </React.StrictMode>
 );
 
