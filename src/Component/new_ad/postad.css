@@ -78,27 +78,22 @@ display: flex;
 flex-direction: column;
 padding: 25px;
 }
-
 .titleCloseBtn {
   display: flex;
   justify-content: flex-end;
 }
-
 .titleCloseBtn button {
   background-color: transparent;
   border: none;
   font-size: 25px;
   cursor: pointer;
 }
-
-
 .modalContainer .footer {
   flex: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 form button {
   width: 150px;
   height: 45px;

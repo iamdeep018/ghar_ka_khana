@@ -93,3 +93,10 @@
     width: 280px;
     background-color: beige;
 }
+.soon{
+    color: red;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 1.4rem;
+    left: 44%;
+}

@@ -30,16 +30,12 @@ const Naviga = ()=>{
         dispatch(categoryFilter(""));
         dispatch(locationFilter(""));
     } 
-
-
     const signOutUser=()=>{
         signOut(userauth).then(()=>{
-            
             localStorage.clear()
             dispatch(setIsAuth(false))
         })
     }
-
     function searchEnter(e){
         if(e.key==='Enter'){
         dispatch(contentFilter(fil));
@@ -53,7 +49,6 @@ const Naviga = ()=>{
             dispatch(toggleSign(true))
         }
     }
-
     return ( 
         <div>
         <nav className='navbar'>
@@ -72,7 +67,8 @@ const Naviga = ()=>{
             <li onMouseEnter={()=>{dispatch(togglelocadd(true))}} 
             onMouseLeave={()=>{dispatch(togglelocadd(false))}} 
             >Location {locastatus?<Locationdd />:<></>}<i class="arrow fa-solid fa-angle-right"></i></li>
-            <li>Popular Places</li>
+
+            <li>Popular Places <span className='soon'>Coming Soon</span></li>
             </ul>
 
 
