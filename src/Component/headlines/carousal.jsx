@@ -3,8 +3,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from 'react'
 import "./carousal.css";
+import { useDispatch } from 'react-redux';
+import { categoryFilter } from "../../reducers/catefilterReducer";
+
 
 const ImageSlider = ({images}) => {
+    const dispatch=useDispatch();
+
 
     const GalleryPrevArrow = ({ currentSlide, slideCount, ...props }) => {
          const { className, onClick } = props;
@@ -24,7 +29,6 @@ const ImageSlider = ({images}) => {
       };
       const GalleryNextArrow = ({ currentSlide, slideCount, ...props }) => {
         const { className, onClick } = props;
-    
         return (
           <div {...props} className="custom-nextArrow" onClick={onClick}>
             <svg
@@ -52,16 +56,32 @@ const ImageSlider = ({images}) => {
       // centerPadding:'100px',
       nextArrow: <GalleryNextArrow />,
       prevArrow: <GalleryPrevArrow />
-
     }; 
+    function linkcarousal(iid){
+      if(iid===1){
+        dispatch(categoryFilter(""))
+      }
+      else if(iid===2){
+        dispatch(categoryFilter("food"))
+      }
+      else if(iid===3){
+        dispatch(categoryFilter("car"))
+      }
+      else if(iid===4){
+        dispatch(categoryFilter("rent"))
+      }
+    }
+
     return (
         <>
         <div className="carousal">
             <div className="imgslider">
                 <Slider {...settings}>
                 {images.map((item) => (
-                    <div key={item.id}>
+                    <div key={item.id} className="carousal_image" onClick={()=>linkcarousal(item.id)}>
+                    
                     <img src={item.src} alt={item.alt} />
+
                     </div>
                 ))}
             </Slider>

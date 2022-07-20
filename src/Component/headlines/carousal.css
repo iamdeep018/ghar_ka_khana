@@ -1,19 +1,13 @@
 .carousal{
     position: static;
     margin-top: 5rem;
-    /* top: 5rem; */
     width: 99%;
-    /* left: 9px; */
-    /* padding-right:60px ; */
     height: 70vh;
-    /* background-color: blue; */
 }
 .slick-slide img {
-    /* margin: auto; */
 	width: 1800px;
     height: 670px;
     padding-right: 200px;
-	/* height: 50%; */
 }
 .slick-next{
     display: none;
@@ -32,30 +26,18 @@
     padding: 0 20px;
   }
   .slick-list {
-    /* position: relative; */
     display: block !important;
-    /* overflow: hidden; */
     padding: 100px !important;
     width: 100%;
   }
-  /* .slick-track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-  } */
+
   .slick-slide div {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  /* .slick-slide .image {
-    object-fit:scale-down;
-    border-radius: 2px;
-    min-width: 700px ;
-    width: 40%;
-  } */
+
   .slick-slide div div span {
     margin-top: 10px;
     width: inherit;
@@ -71,43 +53,10 @@
     position: relative;
     top: -100px;
 }
-  /* @media screen and (max-width: 580px) {
-    .slick-slide div div span {
-      display: none;
-    }
-    .slick-slide.slick-current div div span {
-      display: block;
-      margin-top: 10px;
-      width: inherit;
-      text-align: center;
-      font-size: 0.7rem;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #111;
-    }
-  } */
-  /* .slick-slide:not(.slick-active) {
-    position: relative;
-    z-index: 997;
-  } */
-  /* .slick-slide.slick-active:not(.slick-current) {
-    position: relative;
-    z-index: 998;
-    transform: scale(1.3);
-    transition: 0.25s;
-  } */
-  /* .slick-slide.slick-active.slick-current {
-    position: relative;
-    z-index: 999;
-    transform: scale(1.6);
-    transition: 0.25s;
-  } */
+
   .slick-slide.slick-active:not(.slick-current) .image,
   .slick-slide.slick-active.slick-current .image,
-  /* .slick-slide:not(.slick-active) .image {
-    width: 100% !important;
-  } */
+
   .slick-prev,
   .slick-next {
     display: none !important;
@@ -130,4 +79,6 @@
   .custom-nextArrow:hover {
     cursor: pointer;
   }
-  
+  .carousal_image{
+    cursor: pointer;
+  }

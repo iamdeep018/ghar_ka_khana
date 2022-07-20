@@ -16,11 +16,6 @@ import { signOut } from 'firebase/auth';
 import { setIsAuth } from '../../reducers/authReducer';
 import { userauth } from '../../firebase-config';
 
-
-
-import { useEffect } from 'react';
-import {onAuthStateChanged} from "firebase/auth";
-
 const Naviga = ()=>{
     const [fil,setfil]=useState("");
 
