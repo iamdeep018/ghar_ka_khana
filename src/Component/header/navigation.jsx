@@ -12,6 +12,14 @@ import { categoryFilter } from '../../reducers/catefilterReducer';
 import { locationFilter } from '../../reducers/locafilterReducer';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
+import { signOut } from 'firebase/auth';
+import { setIsAuth } from '../../reducers/authReducer';
+import { userauth } from '../../firebase-config';
+
+
+
+import { useEffect } from 'react';
+import {onAuthStateChanged} from "firebase/auth";
 
 const Naviga = ()=>{
     const [fil,setfil]=useState("");
@@ -21,15 +29,33 @@ const Naviga = ()=>{
     const adformstatus=useSelector((state)=>state.adform.value)
     const catestatus=useSelector((state)=>state.catedd.value)
     const locastatus=useSelector((state)=>state.locadd.value)
+    const isAuthh=useSelector((state)=>state.isAuth.value);
     function resetprops (){
         dispatch(contentFilter(""));
         dispatch(categoryFilter(""));
         dispatch(locationFilter(""));
+    } 
+
+
+    const signOutUser=()=>{
+        signOut(userauth).then(()=>{
+            
+            localStorage.clear()
+            dispatch(setIsAuth(false))
+        })
     }
 
     function searchEnter(e){
-        if(e.key=='Enter'){
+        if(e.key==='Enter'){
         dispatch(contentFilter(fil));
+        }
+    }
+    function adFormCheck(){
+        if(isAuthh){
+            dispatch(toggleAdForm(true))
+        }
+        else{
+            dispatch(toggleSign(true))
         }
     }
 
@@ -37,7 +63,6 @@ const Naviga = ()=>{
         <div>
         <nav className='navbar'>
             <div className='menu' >
-                {/* homePage */}
             
             <div className='brand' onClick={resetprops}>
             <img  src={logo}  alt="logo" />
@@ -56,8 +81,6 @@ const Naviga = ()=>{
             </ul>
 
 
-
-
             </div>
             <ul className='navlist leftnav'>
             <li className='search-container'><input type="text" placeholder='SEARCH NAME' className='searchbox' onKeyDown={searchEnter} onChange={(event)=>{
@@ -65,14 +88,13 @@ const Naviga = ()=>{
             }}/><i class="fa-solid fa-magnifying-glass" onClick={
                 ()=>{dispatch(contentFilter(fil))}
             }></i></li>
-            <li className='signin' onClick={() => {
-                dispatch(toggleSign(!signstatus));
+            {!isAuthh? <li className='signin' onClick={() => {
+                dispatch(toggleSign(true));
             }}>
-            Login/SignIn
-            </li>        
-            <li className='ad-form' onClick={()=>{
-                dispatch(toggleAdForm(!adformstatus));
-            }}>POST AD<i class="fa-solid fa-play"></i></li>
+            LogIn/SignUp
+            </li>:<li onClick={signOutUser}>Log Out</li>}
+                    
+            <li className='ad-form' onClick={adFormCheck}>POST AD<i class="fa-solid fa-play"></i></li>
             </ul>
         </nav>
         </div>

@@ -12,7 +12,7 @@ function Card({props}){
             <>
             <div key={item.id} className='card-wrapper'>
                     {item.offer===""?'':<p className='offer'>{item.offer}</p>}
-                    <img src={item.srcc} className='card-img' />
+                    <img src={item.srcc} alt="" className='card-img' />
                     <div>
                         <p className='card-title'>{item.titlee}</p>
                         <p className='card-descp'>{item.Descp},  

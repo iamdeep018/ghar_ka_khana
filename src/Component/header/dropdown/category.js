@@ -1,12 +1,11 @@
 import React from "react";
 import './category.css';
-import {useSelector, useDispatch} from 'react-redux';
+import { useDispatch} from 'react-redux';
 import {categoryFilter} from '../../../reducers/catefilterReducer'
 
 
 function Categorydd(){
     const dispatch=useDispatch();
-    const contentfil=useSelector((state)=>state.catefil.value);
     return(
         <div className="cate-container">
             <ul>

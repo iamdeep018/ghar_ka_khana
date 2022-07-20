@@ -1,11 +1,10 @@
 import React from "react";
 import './location.css'
-import {useSelector, useDispatch} from 'react-redux';
+import { useDispatch} from 'react-redux';
 import {locationFilter} from '../../../reducers/locafilterReducer';
 
 function Locationdd(){
     const dispatch=useDispatch();
-    const contentfil=useSelector((state)=>state.locafil.value)
     return(
         <div className="loca-container">
             <ul >

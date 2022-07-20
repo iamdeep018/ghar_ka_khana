@@ -12,6 +12,7 @@ import locationReducer from './reducers/locationReducer';
 import confilterReducer from './reducers/confilterReducer';
 import catefilterReducer from './reducers/catefilterReducer';
 import locafilterReducer from './reducers/locafilterReducer';
+import authReducer from './reducers/authReducer';
 
 const store=configureStore({
   reducer:{
@@ -22,6 +23,7 @@ const store=configureStore({
     contentfil:confilterReducer,
     catefil:catefilterReducer,
     locafil:locafilterReducer,
+    isAuth:authReducer,
   }
 })
 

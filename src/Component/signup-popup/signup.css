@@ -115,7 +115,19 @@ form button {
 
 .google-sign{
   background-color: white;
+  top:56%;
+  left: 31.5%;
+  position: absolute;
   color: black;
   width: max-content;
   border-style: groove;
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.google-sign i{
+  padding-right: 10px;
 }

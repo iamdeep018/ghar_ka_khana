@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:wght@300&display=swap');
+body{
+  /* background-color: white; */
+  font-family: 'Roboto', sans-serif;
+  overflow: auto;
+} 
+.container{
+  /* max-width: 1300px;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: pink; */
+}
+.explore{
+  /* align-self: flex-start; */
+  letter-spacing: 5px;
+  /* position: relative; */
+  
+  margin-right: 58%;
+  margin-top: 2rem;
+  /* top: 80vh; */
+  font-weight: 900;
+  font-size: 2rem;
+  width: max-content;
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: static;
+  /* top: 85vh; */
+  top: 51rem;
+  /* min-width: 40%; */
+  width: 69%;
+  min-height: 40vh;
+  /* align-self: flex-start; */
+  /* background-color: pink; */
+  /* border: none; */
+  /* margin-left: 18.5rem; */
+}
